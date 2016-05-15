@@ -8,3 +8,12 @@ int main() {
   return 0;
 }
 
+/*
+$ g++ --std=c++11 ejemplo01.cc 
+$ ./a.out 
+Constructor con un argumento: uno
+Constructor con un argumento: dos
+Destructor: dos.
+
+*/
+
