@@ -1,10 +1,10 @@
 #include <cstdio>
 #include <memory>
-#include "mi_objecto.h"
+#include "mi_clase.h"
 
 int main() {
-  MiObjeto *o = new MiObjeto("uno");
-  std::unique_ptr<MiObjeto> up(new MiObjeto("dos"));
+  MiClase *o = new MiClase("uno");
+  std::unique_ptr<MiClase> up(new MiClase("dos"));
   return 0;
 }
 

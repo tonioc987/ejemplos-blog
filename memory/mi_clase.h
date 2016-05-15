@@ -1,27 +1,27 @@
-#ifndef MI_OBJECTO_
-#define MI_OBJECTO_
+#ifndef MI_CLASE_
+#define MI_CLASE_
 
-class MiObjeto {
+class MiClase {
  public:
-  MiObjeto() {
+  MiClase() {
     printf("Constructor sin argumentos\n");
   }
  
-  MiObjeto(std::string name) : name(name) {
+  MiClase(std::string name) : name(name) {
     printf("Constructor con un argumento: %s\n", name.c_str());
   }
   
-  MiObjeto(const MiObjeto &other) {
+  MiClase(const MiClase &other) {
     name = other.name + " copy";
     printf("Constructor copia: %s\n", name.c_str());
   }
   
-  MiObjeto &operator=(const MiObjeto &other) {
+  MiClase &operator=(const MiClase &other) {
     name = other.name + " assigned";
     printf("Operador =: %s\n", name.c_str());
   }
   
-  ~MiObjeto() {
+  ~MiClase() {
     printf("Destructor: %s.\n", name.c_str());
   }
   
